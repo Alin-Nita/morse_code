@@ -1,38 +1,40 @@
 //WE NEED TO WRITE SOME TEST TO TRANSLATE
-//FRENCH TO ENGLISH
+//MORSE CODE PROJECT
+
 import {
-  translate
+  translateLetter,
+  translateWord
 } from "./translator.js";
+
 import {
   it,
   expect
 }
 from '@jest/globals';
-//should translate hello to bonjour(english to french)
 
-it("should translate bonjour to hello", () => {
-  const result = translate("bonjour");
-  expect(result).toBe("hello");
+// make user's input lowercase to match the keys inside the object where all the values are stored
+
+it("should translate SOS to ...  ---  ...", () => {
+  const result = translateWord("SOS");
+  expect(result).toBe("...---...");
 });
 
-//translate je m'appelle to my name is(french to english)
-
-it("should translate je m'appelle to my name is", () => {
-  const result = translate("je m'appelle");
-  expect(result).toBe("my name is");
+it("should translate bye to -... -.-- .", () => {
+  const result = translateWord("bye");
+  expect(result).toBe("-...-.-- .");
 });
 
-//translate qui to yes
-it("should translate qui to yes", () => {
-  const result = translate("qui");
-  expect(result).toBe("yes");
-});
-//translate non to no
-it("should translate non to no", () => {
-  const result = translate("non");
-  expect(result).toBe("no");
+it("should translate red to .-.. -..", () => {
+  const result = translateWord("red");
+  expect(result).toBe("-.-.. -..");
 });
 
-// a .-
-// translate ! to unavailable
-// . to ??
+it("should translate help to ......-...--.", () => {
+  const result = translateWord("help");
+  expect(result).toBe("......-...--.");
+});
+
+it("should translate j to .---", () => {
+  const result = translateLetter("j");
+  expect(result).toBe(".---");
+});

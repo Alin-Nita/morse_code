@@ -1,0 +1,33 @@
+#translate {
+  background-color: rgba(27, 83, 119, 1);
+  color: aliceblue;
+  width: 9em;
+  font-size: x-large;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+#translate:hover {
+  background-color: rgb(49, 45, 39);
+  border-radius: 5px;
+  transition: background-color 1s, border-radius 1s;
+  border-color: yellow;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(13, 74, 131);
+  cursor: pointer;
+}
+
+#user_input {
+  text-align: center;
+  width: 9em;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#translated {
+  font-size: xx-large;
+  color: whitesmoke;
+  text-align: center;
+  width: 9em;
+  background-color: rgb(60, 108, 180)
+}

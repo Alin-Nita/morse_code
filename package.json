@@ -1,12 +1,12 @@
 {
-  "name": "testing_is_fun",
+  "name": "morse_code",
   "version": "1.0.0",
   "description": "",
   "main": "translator.test.js",
   "scripts": {
-    "unittest": "jest ."
+    "unit_test": "jest ."
   },
-  "author": "",
+  "author": "Alin",
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.3.1",

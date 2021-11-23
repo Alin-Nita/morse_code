@@ -1,6 +1,41 @@
-import {
-  lettersNumbers
-} from "./data";
+const lettersNumbers = {
+  a: ".-",
+  b: "-...",
+  c: "-.-.",
+  d: "-..",
+  e: ".",
+  f: "..-.",
+  g: "--.",
+  h: "....",
+  i: "..",
+  j: ".---",
+  k: "-.-",
+  l: ".-..",
+  m: "--",
+  n: "-.",
+  o: "---",
+  p: ".--.",
+  q: "--.-",
+  r: ".-.",
+  s: "...",
+  t: "-",
+  u: "..-",
+  v: "...-",
+  w: ".--",
+  x: "-..-",
+  y: "-.--",
+  z: "--..",
+  0: "-----",
+  1: ".----",
+  2: "..---",
+  3: "...--",
+  4: "....-",
+  5: ".....",
+  6: "-....",
+  7: "--...",
+  8: "---..",
+  9: "----.",
+};
 // break the word/sentence into an array of letters
 // with each letter, translate it to morse
 // save each letter somehow
@@ -15,13 +50,12 @@ const output = document.getElementById('translated');
 
 
 
-export const translateLetter = (letter) => {
+const translateLetter = (letter) => {
   let convert = lettersNumbers[letter];
   return convert;
 };
 
-
-export const translateWord = (word) => {
+const translateWord = (word) => {
 
   let splittedWord = word.split("");
   let translatedWord = "";

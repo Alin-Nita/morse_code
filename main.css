@@ -1,0 +1,62 @@
+body {
+  background-image: url("./assets/translation_service_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#translate {
+  background-color: #1b5377;
+  color: aliceblue;
+  width: 9em;
+  font-size: x-large;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+#translate:hover {
+  background-color: #312d27;
+  border-radius: 5px;
+  transition: background-color 1s, border-radius 1s;
+  border-color: yellow;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #0d4a83;
+  cursor: pointer;
+}
+
+#user_input {
+  text-align: center;
+  width: 9em;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#translated {
+  font-size: xx-large;
+  color: whitesmoke;
+  text-align: center;
+  width: 9em;
+  background-color: #3c6cb4;
+}
+
+.header > h1 {
+  border: 2px solid whitesmoke;
+  color: darkblue;
+  font-size: xxx-large;
+  font-weight: bolder;
+}
