@@ -7,11 +7,11 @@ import {
 // so that we can then .join the array back into a string :) 
 
 
-const userInput = document.getElementById('user_input');
+// const userInput = document.getElementById('user_input');
 
-const translate = document.getElementById('translate');
+// const translate = document.getElementById('translate');
 
-const output = document.getElementById('translated');
+// const output = document.getElementById('translated');
 
 
 
@@ -32,6 +32,6 @@ export const translateWord = (word) => {
   return translatedWord
 };
 
-translate.addEventListener("click", () => {
-  output.innerHTML = translateWord(userInput.value)
-});
+// translate.addEventListener("click", () => {
+//   output.innerHTML = translateWord(userInput.value)
+// });

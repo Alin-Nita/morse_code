@@ -14,19 +14,19 @@ from '@jest/globals';
 
 // make user's input lowercase to match the keys inside the object where all the values are stored
 
-it("should translate SOS to ...  ---  ...", () => {
-  const result = translateWord("SOS");
+it("should translate sos to ...---...", () => {
+  const result = translateWord("sos");
   expect(result).toBe("...---...");
 });
 
-it("should translate bye to -... -.-- .", () => {
+it("should translate bye to -...-.--.", () => {
   const result = translateWord("bye");
-  expect(result).toBe("-...-.-- .");
+  expect(result).toBe("-...-.--.");
 });
 
-it("should translate red to .-.. -..", () => {
+it("should translate red to .-..-..", () => {
   const result = translateWord("red");
-  expect(result).toBe("-.-.. -..");
+  expect(result).toBe(".-..-..");
 });
 
 it("should translate help to ......-...--.", () => {
